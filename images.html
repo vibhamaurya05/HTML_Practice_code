@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <!-- <img src="https://images.unsplash.com/photo-1628015081036-0747ec8f077a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHxlbnwwfHwwfHx8MA%3D%3d" width="300px"> -->
+    <img src="img.jpg" alt="">
+    <picture>
+        <source media="(min-width: 640px)" srcset="./img.jpg"/>
+        <source media="(min-width: 460px)" srcset="./img.jpg"/>
+        <img src="img.jpg" alt="">
+    </picture>
+    
+    <!-- an image map generator -->
+    <img src="img1.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" alt="" title="" href="" coords="190,130,251,80" shape="rect">
+        <area target="" alt="" title="" href="" coords="190,130,251,80" shape="rect">
+    </map>
+    <script>
+        function one(){
+            alert("You clicked on one")
+        }
+    </script>
+
+</body>
+</html>
